@@ -1,14 +1,15 @@
-@import "./base/base";
-@import "./base/typography";
-
+@import "./abstracts/variables";
 @import "./abstracts/features";
 
-@import "./layout/sidebar";
-@import "./layout/header";
-@import "./layout/footer";
+@import "./base/base";
+@import "./base/typography";
 
 @import "./components/realtors";
 @import "./components/story";
 @import "./components/gallery";
+
+@import "./layout/sidebar";
+@import "./layout/header";
+@import "./layout/footer";
 
 @import "./pages/homes";
