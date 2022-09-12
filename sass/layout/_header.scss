@@ -19,7 +19,7 @@
 
 .logo {
     height: 3.5rem;
-    margin-left: 3rem;
+    margin-left: 2rem;
 }
 
 .search {
@@ -80,30 +80,51 @@
 
 .user-nav {
     display: flex;
-    background-color: greenyellow;
-    &__icon-box {
+    align-self: stretch;
+    align-items: center;
 
+    & > * {
+        cursor: pointer;
+        height: 100%;
+        padding: 0 2rem;
+        display: flex;
+        align-items: center;
+
+        position: relative;
+    }
+
+    & > *:hover {
+        background-color: $color-grey-light-2;
     }
 
     &__icon {
         height: 2.5rem;
         width: 2.5rem;
+        fill: $color-grey-dark-2;
     }
 
     &__notification {
+        position: absolute;
+        top: 1.5rem;
+        right: 1.1rem;
 
-    }
+        font-size: .8rem;
+        height: 1.75rem;
+        width: 1.75rem;
+        border-radius: 50%;
+        background-color: $color-primary;
+        color: $color-white;
 
-    &__user {
-
+        // Flex box can align texts too
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     &__user-photo {
         height: 3.75rem;
         border-radius: 50%;
+        margin-right: 1.5rem;
     }
 
-    &__user-name {
-
-    }
 }
