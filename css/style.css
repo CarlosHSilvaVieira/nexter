@@ -19,6 +19,20 @@ body {
   background-repeat: no-repeat;
   min-height: 100vh; }
 
+.gallery {
+  display: flex; }
+  .gallery__photo {
+    width: 100%;
+    display: block; }
+
+.overview {
+  display: flex;
+  justify-content: space-between; }
+  .overview__icon-star, .overview__icon-location {
+    width: 1.75rem;
+    height: 1.75rem;
+    fill: #eb2f64; }
+
 .sidebar {
   background-color: #333;
   flex: 0 0 18%;
@@ -166,5 +180,4 @@ body {
 
 .hotel-view {
   height: 80rem;
-  background-color: orangered;
   flex: 1; }
